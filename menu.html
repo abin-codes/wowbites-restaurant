@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - WOW Bites | Premium Dining Experience in Kochi</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="menu-header" id="menu-header">
+        <nav class="menu-nav" id="menu-nav">
+            <div class="menu-nav-brand">
+                <h1 class="menu-brand-title">WOW Bites</h1>
+                <p class="menu-brand-tagline">Where Every Bite Says WOW!</p>
+            </div>
+            
+            <div class="menu-nav-menu" id="menu-nav-menu">
+                <a href="index.html" class="menu-nav-link" data-cms="menu-nav-home">Home</a>
+                <a href="aboutus.html" class="menu-nav-link" data-cms="menu-nav-about">About Us</a>
+                <a href="menu.html" class="menu-nav-link active" data-cms="menu-nav-menu">Menu</a>
+                <a href="blog.html" class="menu-nav-link" data-cms="menu-nav-blog">Blog</a>
+                <a href="contact.html" class="menu-nav-link" data-cms="menu-nav-contact">Contact</a>
+            </div>
+
+            <button class="btn-global menu-nav-cta" id="menu-nav-book-btn" data-cms="menu-nav-book-btn">Book a Table</button>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-nav-toggle" id="menu-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="menu-hero" id="menu-hero">
+        <div class="menu-hero-content">
+            <p class="menu-hero-label" data-cms="menu-hero-label">DISCOVER</p>
+            <h2 class="menu-hero-title" data-cms="menu-hero-title">Our Menu</h2>
+            <p class="menu-hero-desc" data-cms="menu-hero-desc">
+                Explore our carefully curated selection of dishes, from traditional favorites to innovative creations
+            </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="menu-filter-container">
+            <div class="menu-filter-buttons" id="menu-filter-buttons">
+                <button class="menu-filter-btn active" data-filter="all" data-cms="menu-filter-all">All</button>
+                <button class="menu-filter-btn" data-filter="veg" data-cms="menu-filter-veg">Veg</button>
+                <button class="menu-filter-btn" data-filter="non-veg" data-cms="menu-filter-nonveg">Non-Veg</button>
+                <button class="menu-filter-btn" data-filter="sweets" data-cms="menu-filter-sweets">Sweets</button>
+                <button class="menu-filter-btn" data-filter="beverages" data-cms="menu-filter-beverages">Cold Beverages</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MENU ITEMS SECTION ==================== -->
+    <section class="menu-items" id="menu-items">
+        <div class="menu-items-container">
+            <!-- Section Title -->
+            <h3 class="menu-section-heading" id="menu-section-heading">All Dishes</h3>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
+
+                <!-- ========== VEG ITEMS (8 ITEMS) ========== -->
+                <!-- To add a new VEG item: Copy this card structure and change category to "veg" -->
+                
+                <!-- VEG ITEM 1 -->
+                <div class="menu-card" data-category="veg" data-cms="menu-item-1">
+                    <div class="menu-card-image">
+                        <img src="images/veg-paneer-butter masala.jpg" alt="Paneer Butter Masala" data-cms="menu-item-1-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-veg" data-cms="menu-item-1-badge">Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-1-title">Paneer Butter Masala</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-1-desc">Soft cubes of cottage cheese simmered in rich, buttery tomato gravy with aromatic Indian spices</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-1-price">₹149</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-1-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEG ITEM 2 -->
+                <div class="menu-card" data-category="veg" data-cms="menu-item-2">
+                    <div class="menu-card-image">
+                        <img src="images/veg-fried rice.jpg" alt="Veg Fried Rice" data-cms="menu-item-2-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-veg" data-cms="menu-item-2-badge">Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-2-title">Veg Fried Rice</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-2-desc">Fragrant basmati rice tossed with colorful veggies, soy sauce, and a hint of wok-charred flavor</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-2-price">₹120</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-2-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEG ITEM 3 -->
+                <div class="menu-card" data-category="veg" data-cms="menu-item-3">
+                    <div class="menu-card-image">
+                        <img src="images/veg-noodles.jpg" alt="Veg Noodles" data-cms="menu-item-3-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-veg" data-cms="menu-item-3-badge">Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-3-title">Veg Noodles</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-3-desc">Stir-fried noodles with mixed vegetables in a tangy soy-garlic sauce — a street-style favorite</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-3-price">₹199</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-3-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEG ITEM 4 -->
+                <div class="menu-card" data-category="veg" data-cms="menu-item-4">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600" alt="Veg Pasta" data-cms="menu-item-4-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-veg" data-cms="menu-item-4-badge">Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-4-title">Veg Pasta</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-4-desc">Penne tossed in creamy white or tangy red sauce with sautéed bell peppers and herbs</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-4-price">₹189</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-4-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEG ITEM 5 -->
+                <div class="menu-card" data-category="veg" data-cms="menu-item-5">
+                    <div class="menu-card-image">
+                        <img src="images/veg-pizza.jpg" alt="Veg Pizza" data-cms="menu-item-5-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-veg" data-cms="menu-item-5-badge">Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-5-title">Veg Pizza</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-5-desc">Crispy thin crust topped with mozzarella, fresh veggies, and signature tomato sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-5-price">₹269</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-5-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEG ITEM 6 -->
+                <div class="menu-card" data-category="veg" data-cms="menu-item-6">
+                    <div class="menu-card-image">
+                        <img src="images/veg-burger.jpg" alt="Veg Burger" data-cms="menu-item-6-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-veg" data-cms="menu-item-6-badge">Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-6-title">Veg Burger</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-6-desc">Crispy veggie patty layered with lettuce, cheese, and house-made sauce in a soft bun</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-6-price">₹129</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-6-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEG ITEM 7 -->
+                <div class="menu-card" data-category="veg" data-cms="menu-item-7">
+                    <div class="menu-card-image">
+                        <img src="images/veg-momos.jpg" alt="Veg Momos" data-cms="menu-item-7-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-veg" data-cms="menu-item-7-badge">Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-7-title">Veg Momos</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-7-desc">Steamed dumplings filled with seasoned vegetables, served with spicy chili dip</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-7-price">₹499</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-7-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VEG ITEM 8 -->
+                <div class="menu-card" data-category="veg" data-cms="menu-item-8">
+                    <div class="menu-card-image">
+                        <img src="images/veg-salad.jpg" alt="Garden Fresh Salad" data-cms="menu-item-8-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-veg" data-cms="menu-item-8-badge">Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-8-title">Garden Fresh Salad</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-8-desc">Crunchy lettuce, cherry tomatoes, cucumbers, and nuts with light house vinaigrette</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-8-price">₹110</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-8-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== NON-VEG ITEMS (8 ITEMS) ========== -->
+                <!-- To add a new NON-VEG item: Copy this card structure and change category to "non-veg" -->
+                
+                <!-- NON-VEG ITEM 1 -->
+                <div class="menu-card" data-category="non-veg" data-cms="menu-item-9">
+                    <div class="menu-card-image">
+                        <img src="images/chicken-biriyani.jpg" alt="Chicken Biriyani" data-cms="menu-item-9-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-nonveg" data-cms="menu-item-9-badge">Non-Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-9-title">Chicken Biriyani</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-9-desc">Aromatic basmati rice layered with tender chicken, saffron, and traditional spices — served with raita</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-9-price">₹180</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-9-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NON-VEG ITEM 2 -->
+                <div class="menu-card" data-category="non-veg" data-cms="menu-item-10">
+                    <div class="menu-card-image">
+                        <img src="images/chicken-mandhi.jpg" alt="Chicken Mandi" data-cms="menu-item-10-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-nonveg" data-cms="menu-item-10-badge">Non-Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-10-title">Chicken Mandi - Full (quarter and half available)</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-10-desc">Flavorful Arabian-style rice with juicy grilled chicken and a blend of special mandi spices</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-10-price">₹800</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-10-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NON-VEG ITEM 3 -->
+                <div class="menu-card" data-category="non-veg" data-cms="menu-item-11">
+                    <div class="menu-card-image">
+                        <img src="images/chicken-roast.jpg" alt="Chicken Roast" data-cms="menu-item-11-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-nonveg" data-cms="menu-item-11-badge">Non-Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-11-title">Chicken Roast</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-11-desc">Slow-roasted chicken marinated in spicy masala, served with curry leaves and onions</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-11-price">₹320</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-11-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NON-VEG ITEM 4 -->
+                <div class="menu-card" data-category="non-veg" data-cms="menu-item-12">
+                    <div class="menu-card-image">
+                        <img src="images/creamy-lobster.jpg" alt="Creamy Chilli Lobster" data-cms="menu-item-12-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-nonveg" data-cms="menu-item-12-badge">Non-Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-12-title">Creamy Chilli Lobster</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-12-desc">Fresh lobster cooked in creamy garlic-chilli sauce — a seafood lover’s indulgence</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-12-price">₹289</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-12-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NON-VEG ITEM 5 -->
+                <div class="menu-card" data-category="non-veg" data-cms="menu-item-13">
+                    <div class="menu-card-image">
+                        <img src="images/salmon-recipe.jpg" alt="Salmon Delight" data-cms="menu-item-13-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-nonveg" data-cms="menu-item-13-badge">Non-Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-13-title">Salmon Delight</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-13-desc">Grilled salmon fillet seasoned with herbs and lemon butter sauce for a fresh, rich flavor</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-13-price">₹329</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-13-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NON-VEG ITEM 6 -->
+                <div class="menu-card" data-category="non-veg" data-cms="menu-item-14">
+                    <div class="menu-card-image">
+                        <img src="images/fish-curry.jpg" alt="Traditional Fish Curry" data-cms="menu-item-14-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-nonveg" data-cms="menu-item-14-badge">Non-Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-14-title">Traditional Fish Curry</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-14-desc">Coastal-style fish curry simmered in tangy coconut gravy with authentic spices</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-14-price">₹149</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-14-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NON-VEG ITEM 7 -->
+                <div class="menu-card" data-category="non-veg" data-cms="menu-item-15">
+                    <div class="menu-card-image">
+                        <img src="images/beef-burger.jpg" alt="Beef Burger" data-cms="menu-item-15-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-nonveg" data-cms="menu-item-15-badge">Non-Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-15-title">Beef Burger</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-15-desc">Juicy beef patty layered with cheese, lettuce, and smoky house sauce in a toasted bun</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-15-price">₹299</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-15-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NON-VEG ITEM 8 -->
+                <div class="menu-card" data-category="non-veg" data-cms="menu-item-16">
+                    <div class="menu-card-image">
+                        <img src="images/non-veg-pizza.jpg" alt="Non-Veg Pizza" data-cms="menu-item-16-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-nonveg" data-cms="menu-item-16-badge">Non-Veg</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-16-title">Non-Veg Pizza</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-16-desc">Loaded with spicy chicken, sausage, and cheese over classic tomato base</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-16-price">₹369</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-16-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== SWEETS ITEMS (8 ITEMS) ========== -->
+                <!-- To add a new SWEETS item: Copy this card structure and change category to "sweets" -->
+                
+                <!-- SWEETS ITEM 1 -->
+                <div class="menu-card" data-category="sweets" data-cms="menu-item-17">
+                    <div class="menu-card-image">
+                        <img src="images/bread-dessert.jpg" alt="Banana Bliss Bread Dessert" data-cms="menu-item-17-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-sweets" data-cms="menu-item-17-badge">Sweets</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-17-title">Banana Bliss Bread Dessert</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-17-desc">Warm bread dessert layered with banana slices, blueberries, and a drizzle of honey</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-17-price">₹169</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-17-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SWEETS ITEM 2 -->
+                <div class="menu-card" data-category="sweets" data-cms="menu-item-18">
+                    <div class="menu-card-image">
+                        <img src="images/chocalate-brownie.jpg" alt="Chocolate Brownie" data-cms="menu-item-18-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-sweets" data-cms="menu-item-18-badge">Sweets</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-18-title">Chocolate Brownie</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-18-desc">Rich, fudgy brownie served warm with a hint of cocoa indulgence</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-18-price">₹130</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-18-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SWEETS ITEM 3 -->
+                <div class="menu-card" data-category="sweets" data-cms="menu-item-19">
+                    <div class="menu-card-image">
+                        <img src="images/chocolate-crep.jpg" alt="Classic Chocolate Crepe" data-cms="menu-item-19-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-sweets" data-cms="menu-item-19-badge">Sweets</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-19-title">Classic Chocolate Crepe</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-19-desc">Soft French crêpe filled with melted chocolate and dusted with sugar</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-19-price">₹290</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-19-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SWEETS ITEM 4 -->
+                <div class="menu-card" data-category="sweets" data-cms="menu-item-20">
+                    <div class="menu-card-image">
+                        <img src="images/donuts.jpg" alt="Glazed Donuts" data-cms="menu-item-20-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-sweets" data-cms="menu-item-20-badge">Sweets</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-20-title">Glazed Donuts</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-20-desc">Soft, fluffy donuts glazed with a sweet vanilla or chocolate finish</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-20-price">₹99</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-20-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SWEETS ITEM 5 -->
+                <div class="menu-card" data-category="sweets" data-cms="menu-item-21">
+                    <div class="menu-card-image">
+                        <img src="images/lotus-biscoff-desert.jpg" alt="Lotus Biscoff Delight" data-cms="menu-item-21-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-sweets" data-cms="menu-item-21-badge">Sweets</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-21-title">Lotus Biscoff Delight</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-21-desc">Creamy dessert infused with caramelized Lotus Biscoff flavor and biscuit crunch</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-21-price">₹269</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-21-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SWEETS ITEM 6 -->
+                <div class="menu-card" data-category="sweets" data-cms="menu-item-22">
+                    <div class="menu-card-image">
+                        <img src="images/mango-pudding.jpg" alt="Mango Pudding" data-cms="menu-item-22-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-sweets" data-cms="menu-item-22-badge">Sweets</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-22-title">Mango Pudding</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-22-desc">Silky smooth mango pudding topped with fresh mango cubes</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-22-price">₹110</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-22-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SWEETS ITEM 7 -->
+                <div class="menu-card" data-category="sweets" data-cms="menu-item-23">
+                    <div class="menu-card-image">
+                        <img src="images/pancake-berry-desert.jpg" alt="Berry Pancake Stack" data-cms="menu-item-23-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-sweets" data-cms="menu-item-23-badge">Sweets</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-23-title">Berry Pancake Stack</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-23-desc">Fluffy pancakes layered with mixed berries and maple drizzle</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-23-price">₹250</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-23-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SWEETS ITEM 8 -->
+                <div class="menu-card" data-category="sweets" data-cms="menu-item-24">
+                    <div class="menu-card-image">
+                        <img src="images/raspberry-cheesecake.jpg" alt="Raspberry Cheesecake" data-cms="menu-item-24-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-sweets" data-cms="menu-item-24-badge">Sweets</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-24-title">Raspberry Cheesecake</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-24-desc">Creamy cheesecake topped with tangy raspberry glaze — perfectly balanced sweetness</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-24-price">₹170</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-24-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== COLD BEVERAGES ITEMS (8 ITEMS) ========== -->
+                <!-- To add a new BEVERAGES item: Copy this card structure and change category to "beverages" -->
+                
+                <!-- BEVERAGES ITEM 1 -->
+                <div class="menu-card" data-category="beverages" data-cms="menu-item-25">
+                    <div class="menu-card-image">
+                        <img src="images/shake-snickers.jpg" alt="Snickers Shake" data-cms="menu-item-25-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-beverages" data-cms="menu-item-25-badge">Cold Beverages</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-25-title">Snickers Shake</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-25-desc">Creamy chocolate shake blended with peanut butter, caramel, and crushed Snickers</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-25-price">₹140</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-25-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEVERAGES ITEM 2 -->
+                <div class="menu-card" data-category="beverages" data-cms="menu-item-26">
+                    <div class="menu-card-image">
+                        <img src="images/shake-oreo.jpg" alt="Oreo Shake" data-cms="menu-item-26-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-beverages" data-cms="menu-item-26-badge">Cold Beverages</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-26-title">Oreo Shake</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-26-desc">Classic milkshake mixed with crushed Oreos and whipped cream topping</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-26-price">₹130</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-26-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEVERAGES ITEM 3 -->
+                <div class="menu-card" data-category="beverages" data-cms="menu-item-27">
+                    <div class="menu-card-image">
+                        <img src="images/shake-tender coconut.jpg" alt="Tender Coconut Shake" data-cms="menu-item-27-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-beverages" data-cms="menu-item-27-badge">Cold Beverages</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-27-title">Tender Coconut Shake</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-27-desc">Refreshing blend of tender coconut water, pulp, and chilled milk — tropical freshness</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-27-price">₹120</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-27-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEVERAGES ITEM 4 -->
+                <div class="menu-card" data-category="beverages" data-cms="menu-item-28">
+                    <div class="menu-card-image">
+                        <img src="images/mojito-blue berry.jpg" alt="Blueberry Mojito" data-cms="menu-item-28-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-beverages" data-cms="menu-item-28-badge">Cold Beverages</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-28-title">Blueberry Mojito</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-28-desc">Cool fusion of blueberries, mint, and lime with a sparkling soda twist</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-28-price">₹100</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-28-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEVERAGES ITEM 5 -->
+                <div class="menu-card" data-category="beverages" data-cms="menu-item-29">
+                    <div class="menu-card-image">
+                        <img src="images/mojito-mint lime.jpg" alt="Mint Lime Mojito" data-cms="menu-item-29-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-beverages" data-cms="menu-item-29-badge">Cold Beverages</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-29-title">Mint Lime Mojito</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-29-desc">Zesty lime and fresh mint muddled with ice and soda for a cooling hit</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-29-price">₹100</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-29-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEVERAGES ITEM 6 -->
+                <div class="menu-card" data-category="beverages" data-cms="menu-item-30">
+                    <div class="menu-card-image">
+                        <img src="images/mojito-watermelon.jpg" alt="Watermelon Mojito" data-cms="menu-item-30-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-beverages" data-cms="menu-item-30-badge">Cold Beverages</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-30-title">Watermelon Mojito</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-30-desc">Fresh watermelon blended with mint and lemon for a fruity refreshment</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-30-price">₹100</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-30-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEVERAGES ITEM 7 -->
+                <div class="menu-card" data-category="beverages" data-cms="menu-item-31">
+                    <div class="menu-card-image">
+                        <img src="images/mojito-pineapple.jpg" alt="Pineapple Mojito" data-cms="menu-item-31-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-beverages" data-cms="menu-item-31-badge">Cold Beverages</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-31-title">Pineapple Mojito</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-31-desc">Tropical pineapple mixed with mint, lime, and soda — a summer favorite</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-31-price">₹100</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-31-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BEVERAGES ITEM 8 -->
+                <div class="menu-card" data-category="beverages" data-cms="menu-item-32">
+                    <div class="menu-card-image">
+                        <img src="images/cold-coffee.jpg" alt="Cold Coffee" data-cms="menu-item-32-image">
+                    </div>
+                    <div class="menu-card-content">
+                        <span class="menu-card-badge menu-badge-beverages" data-cms="menu-item-32-badge">Cold Beverages</span>
+                        <h4 class="menu-card-title" data-cms="menu-item-32-title">Cold Coffee</h4>
+                        <p class="menu-card-desc" data-cms="menu-item-32-desc">Smooth chilled coffee blended with milk and ice cream for a rich, creamy taste</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price" data-cms="menu-item-32-price">₹90</span>
+                            <button class="btn-global menu-card-btn" data-cms="menu-item-32-btn">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="menu-footer" id="menu-footer">
+        <div class="menu-footer-content">
+            <!-- Brand Column -->
+            <div class="menu-footer-col menu-footer-brand">
+                <h4 class="menu-footer-logo" data-cms="menu-footer-logo">WOW Bites</h4>
+                <p class="menu-footer-tagline" data-cms="menu-footer-tagline">Where Every Bite Says WOW!</p>
+                <p class="menu-footer-desc" data-cms="menu-footer-desc">
+                    Premium dining experience in the heart of Kochi.
+                </p>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="menu-footer-col">
+                <h5 class="menu-footer-heading" data-cms="menu-footer-links-heading">Quick Links</h5>
+                <ul class="menu-footer-links">
+                    <li><a href="index.html" data-cms="menu-footer-link-home">Home</a></li>
+                    <li><a href="aboutus.html" data-cms="menu-footer-link-about">About</a></li>
+                    <li><a href="menu.html" data-cms="menu-footer-link-menu">Menu</a></li>
+                    <li><a href="blog.html" data-cms="menu-footer-link-blog">Blog</a></li>
+                    <li><a href="contact.html" data-cms="menu-footer-link-contact">Contact</a></li>
+                    <li><a href="contact.html#booking-form" data-cms="menu-footer-link-reservations">Reservations</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="menu-footer-col">
+                <h5 class="menu-footer-heading" data-cms="menu-footer-contact-heading">Contact Us</h5>
+                <ul class="menu-footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-cms="menu-footer-address">MG Road, Kochi, Kerala 682001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span data-cms="menu-footer-phone">+91 484 123 4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span data-cms="menu-footer-email">hello@wowbites.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social & Hours Column -->
+            <div class="menu-footer-col">
+                <h5 class="menu-footer-heading" data-cms="menu-footer-social-heading">Follow Us</h5>
+                <div class="menu-footer-social">
+                    <a href="#" class="menu-social-icon" data-cms="menu-footer-instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="menu-social-icon" data-cms="menu-footer-facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="menu-social-icon" data-cms="menu-footer-youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="menu-footer-hours">
+                    <h5 class="menu-footer-heading" data-cms="menu-footer-hours-heading">Opening Hours</h5>
+                    <p data-cms="menu-footer-hours">Mon - Sun: 11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="menu-footer-bottom">
+            <p data-cms="menu-footer-copyright">
+                © 2025 WOW Bites. All rights reserved. Crafted with love in Kochi.
+            </p>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>

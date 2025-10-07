@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blog - WOW Bites | Culinary Stories & Recipes</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="blog-header" id="blog-header">
+        <nav class="blog-nav" id="blog-nav">
+            <div class="blog-nav-brand">
+                <h1 class="blog-brand-title">WOW Bites</h1>
+                <p class="blog-brand-tagline">Where Every Bite Says WOW!</p>
+            </div>
+            
+            <div class="blog-nav-menu" id="blog-nav-menu">
+                <a href="index.html" class="blog-nav-link" data-cms="blog-nav-home">Home</a>
+                <a href="aboutus.html" class="blog-nav-link" data-cms="blog-nav-about">About Us</a>
+                <a href="menu.html" class="blog-nav-link" data-cms="blog-nav-menu">Menu</a>
+                <a href="blog.html" class="blog-nav-link active" data-cms="blog-nav-blog">Blog</a>
+                <a href="contact.html" class="blog-nav-link" data-cms="blog-nav-contact">Contact</a>
+            </div>
+
+            <button class="btn-global blog-nav-cta" id="blog-nav-book-btn" data-cms="blog-nav-book-btn">Book a Table</button>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="blog-nav-toggle" id="blog-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="blog-hero" id="blog-hero">
+        <div class="blog-hero-content">
+            <p class="blog-hero-label" data-cms="blog-hero-label">STORIES & RECIPES</p>
+            <h2 class="blog-hero-title" data-cms="blog-hero-title">Our Blog</h2>
+            <p class="blog-hero-desc" data-cms="blog-hero-desc">
+                Dive into the world of culinary excellence with our latest articles, recipes, and restaurant news
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG POSTS SECTION ==================== -->
+    <section class="blog-posts" id="blog-posts">
+        <div class="blog-posts-container">
+            
+            <div class="blog-posts-grid">
+
+                <!-- ========== BLOG POST 1 ========== -->
+                <!-- To add a new blog post: Copy this entire blog-card div and update all content -->
+                <article class="blog-card" data-cms="blog-post-1">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800" alt="The Art of Perfect Steak" data-cms="blog-post-1-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date" data-cms="blog-post-1-date">
+                                <i class="fas fa-calendar"></i> Oct 1, 2025
+                            </span>
+                            <span class="blog-card-author" data-cms="blog-post-1-author">
+                                <i class="fas fa-user"></i> Chef Arjun
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title" data-cms="blog-post-1-title">The Art of Perfect Steak: A Chef's Guide</h3>
+                        <p class="blog-card-excerpt" data-cms="blog-post-1-excerpt">
+                            Discover the secrets behind cooking the perfect steak, from selecting the right cut to achieving the ideal temperature. Our head chef shares his...
+                        </p>
+                        <a href="#" class="blog-card-btn" data-cms="blog-post-1-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- ========== BLOG POST 2 ========== -->
+                <article class="blog-card" data-cms="blog-post-2">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800" alt="Kerala's Culinary Heritage" data-cms="blog-post-2-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date" data-cms="blog-post-2-date">
+                                <i class="fas fa-calendar"></i> Sep 28, 2025
+                            </span>
+                            <span class="blog-card-author" data-cms="blog-post-2-author">
+                                <i class="fas fa-user"></i> Sarah Mathew
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title" data-cms="blog-post-2-title">Kerala's Culinary Heritage Meets Modern Cuisine</h3>
+                        <p class="blog-card-excerpt" data-cms="blog-post-2-excerpt">
+                            Exploring how traditional Kerala flavors can be reimagined in contemporary dishes. A journey through spices, coconut, and innovation.
+                        </p>
+                        <a href="#" class="blog-card-btn" data-cms="blog-post-2-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- ========== BLOG POST 3 ========== -->
+                <article class="blog-card" data-cms="blog-post-3">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800" alt="Wine Pairing 101" data-cms="blog-post-3-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date" data-cms="blog-post-3-date">
+                                <i class="fas fa-calendar"></i> Sep 25, 2025
+                            </span>
+                            <span class="blog-card-author" data-cms="blog-post-3-author">
+                                <i class="fas fa-user"></i> Vikram Nair
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title" data-cms="blog-post-3-title">Wine Pairing 101: Elevate Your Dining Experience</h3>
+                        <p class="blog-card-excerpt" data-cms="blog-post-3-excerpt">
+                            Learn the fundamentals of pairing wine with your meal. From reds to whites, discover which wines complement our signature dishes...
+                        </p>
+                        <a href="#" class="blog-card-btn" data-cms="blog-post-3-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- ========== BLOG POST 4 ========== -->
+                <article class="blog-card" data-cms="blog-post-4">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800" alt="Behind the Scenes" data-cms="blog-post-4-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date" data-cms="blog-post-4-date">
+                                <i class="fas fa-calendar"></i> Sep 22, 2025
+                            </span>
+                            <span class="blog-card-author" data-cms="blog-post-4-author">
+                                <i class="fas fa-user"></i> Chef Arjun
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title" data-cms="blog-post-4-title">Behind the Scenes: A Day in Our Kitchen</h3>
+                        <p class="blog-card-excerpt" data-cms="blog-post-4-excerpt">
+                            Ever wondered what goes on behind the scenes at WOW Bites? Take a peek into our kitchen and see how we prepare your favorite dishes.
+                        </p>
+                        <a href="#" class="blog-card-btn" data-cms="blog-post-4-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- ========== BLOG POST 5 ========== -->
+                <article class="blog-card" data-cms="blog-post-5">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=800" alt="Crafting Perfect Desserts" data-cms="blog-post-5-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date" data-cms="blog-post-5-date">
+                                <i class="fas fa-calendar"></i> Sep 18, 2025
+                            </span>
+                            <span class="blog-card-author" data-cms="blog-post-5-author">
+                                <i class="fas fa-user"></i> Sarah Mathew
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title" data-cms="blog-post-5-title">The Sweet Science: Crafting Perfect Desserts</h3>
+                        <p class="blog-card-excerpt" data-cms="blog-post-5-excerpt">
+                            Dessert isn't just the final course - it's an art form. Our pastry chef reveals the techniques behind our most popular sweet creations.
+                        </p>
+                        <a href="#" class="blog-card-btn" data-cms="blog-post-5-btn">Read More</a>
+                    </div>
+                </article>
+
+                <!-- ========== BLOG POST 6 ========== -->
+                <article class="blog-card" data-cms="blog-post-6">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800" alt="Sustainable Sourcing" data-cms="blog-post-6-image">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-date" data-cms="blog-post-6-date">
+                                <i class="fas fa-calendar"></i> Sep 15, 2025
+                            </span>
+                            <span class="blog-card-author" data-cms="blog-post-6-author">
+                                <i class="fas fa-user"></i> Vikram Nair
+                            </span>
+                        </div>
+                        <h3 class="blog-card-title" data-cms="blog-post-6-title">Sustainable Sourcing: Our Commitment to Quality</h3>
+                        <p class="blog-card-excerpt" data-cms="blog-post-6-excerpt">
+                            At WOW Bites, we believe in using only the finest, sustainably-sourced ingredients. Learn about our farm-to-table approach.
+                        </p>
+                        <a href="#" class="blog-card-btn" data-cms="blog-post-6-btn">Read More</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER SECTION ==================== -->
+    <section class="blog-newsletter" id="blog-newsletter">
+        <div class="blog-newsletter-content">
+            <h3 class="blog-newsletter-title" data-cms="blog-newsletter-title">Never Miss a Recipe</h3>
+            <p class="blog-newsletter-desc" data-cms="blog-newsletter-desc">
+                Subscribe to our newsletter for the latest culinary insights and exclusive recipes
+            </p>
+            <form class="blog-newsletter-form" id="blog-newsletter-form">
+                <input 
+                    type="email" 
+                    class="blog-newsletter-input" 
+                    placeholder="Your email address" 
+                    required 
+                    data-cms="blog-newsletter-input"
+                    id="blog-newsletter-email"
+                >
+                <button type="submit" class="btn-global blog-newsletter-btn" data-cms="blog-newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="blog-footer" id="blog-footer">
+        <div class="blog-footer-content">
+            <!-- Brand Column -->
+            <div class="blog-footer-col blog-footer-brand">
+                <h4 class="blog-footer-logo" data-cms="blog-footer-logo">WOW Bites</h4>
+                <p class="blog-footer-tagline" data-cms="blog-footer-tagline">Where Every Bite Says WOW!</p>
+                <p class="blog-footer-desc" data-cms="blog-footer-desc">
+                    Premium dining experience in the heart of Kochi.
+                </p>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="blog-footer-col">
+                <h5 class="blog-footer-heading" data-cms="blog-footer-links-heading">Quick Links</h5>
+                <ul class="blog-footer-links">
+                    <li><a href="index.html" data-cms="blog-footer-link-home">Home</a></li>
+                    <li><a href="aboutus.html" data-cms="blog-footer-link-about">About</a></li>
+                    <li><a href="menu.html" data-cms="blog-footer-link-menu">Menu</a></li>
+                    <li><a href="blog.html" data-cms="blog-footer-link-blog">Blog</a></li>
+                    <li><a href="contact.html" data-cms="blog-footer-link-contact">Contact</a></li>
+                    <li><a href="contact.html#booking-form" data-cms="blog-footer-link-reservations">Reservations</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="blog-footer-col">
+                <h5 class="blog-footer-heading" data-cms="blog-footer-contact-heading">Contact Us</h5>
+                <ul class="blog-footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-cms="blog-footer-address">MG Road, Kochi, Kerala 682001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span data-cms="blog-footer-phone">+91 484 123 4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span data-cms="blog-footer-email">hello@wowbites.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social & Hours Column -->
+            <div class="blog-footer-col">
+                <h5 class="blog-footer-heading" data-cms="blog-footer-social-heading">Follow Us</h5>
+                <div class="blog-footer-social">
+                    <a href="#" class="blog-social-icon" data-cms="blog-footer-instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="blog-social-icon" data-cms="blog-footer-facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="blog-social-icon" data-cms="blog-footer-youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="blog-footer-hours">
+                    <h5 class="blog-footer-heading" data-cms="blog-footer-hours-heading">Opening Hours</h5>
+                    <p data-cms="blog-footer-hours">Mon - Sun: 11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="blog-footer-bottom">
+            <p data-cms="blog-footer-copyright">
+                © 2025 WOW Bites. All rights reserved. Crafted with love in Kochi.
+            </p>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>

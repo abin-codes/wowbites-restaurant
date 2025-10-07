@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW Bites - Premium Dining Experience in Kochi</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="home-header" id="home-header">
+        <nav class="home-nav" id="home-nav">
+            <div class="home-nav-brand">
+                <h1 class="home-brand-title">WOW Bites</h1>
+                <p class="home-brand-tagline">Where Every Bite Says WOW!</p>
+            </div>
+            
+            <div class="home-nav-menu" id="home-nav-menu">
+                <a href="#home" class="home-nav-link active" data-cms="nav-home">Home</a>
+                <a href="aboutus.html" class="home-nav-link" data-cms="nav-about">About Us</a>
+                <a href="menu.html" class="home-nav-link" data-cms="nav-menu">Menu</a>
+                <a href="blog.html" class="home-nav-link" data-cms="nav-blog">Blog</a>
+                <a href="contact.html" class="home-nav-link" data-cms="nav-contact">Contact</a>
+            </div>
+
+            <button class="btn-global home-nav-cta" id="home-nav-book-btn" data-cms="nav-book-btn">Book a Table</button>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="home-nav-toggle" id="home-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="home-hero" id="home-hero">
+        <div class="home-hero-overlay"></div>
+        <div class="home-hero-content">
+            <h2 class="home-hero-title">
+                Where Every Bite Says <span class="home-hero-highlight" data-cms="hero-highlight">WOW!</span>
+            </h2>
+            <p class="home-hero-subtitle" data-cms="hero-subtitle">Premium Dining Experience in Kochi</p>
+            <button class="btn-global btn-pulse home-hero-cta" id="home-hero-book-btn" data-cms="hero-book-btn">Book a Table</button>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="home-hero-scroll">
+            <div class="home-scroll-icon">
+                <i class="fas fa-computer-mouse"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DARK FADE DIVIDER ==================== -->
+    <div class="home-divider-fade"></div>
+
+    <!-- ==================== FEATURED DISHES SECTION ==================== -->
+    <section class="home-featured" id="home-featured">
+        <div class="home-featured-header">
+            <p class="home-section-label" data-cms="featured-label">OUR SPECIALTIES</p>
+            <h3 class="home-section-title" data-cms="featured-title">Featured Dishes</h3>
+            <p class="home-section-desc" data-cms="featured-desc">
+                Discover our chef's handpicked selection of signature dishes that define the WOW Bites experience
+            </p>
+        </div>
+
+        <div class="home-featured-grid" id="home-featured-grid">
+            <!-- Dish Card 1 -->
+            <div class="home-dish-card" data-cms="dish-1">
+                <div class="home-dish-image">
+                    <img src="images/chicken-mandhi.jpg" alt="Chicken Mandi" data-cms="dish-1-image">
+                    <span class="home-dish-badge" data-cms="dish-1-badge">Non-Veg</span>
+                </div>
+                <div class="home-dish-content">
+                    <h4 class="home-dish-name" data-cms="dish-1-name">Chicken Mandi - Full (quarter and half available)</h4>
+                    <p class="home-dish-desc" data-cms="dish-1-desc">Flavorful Arabian-style rice with juicy grilled chicken and a blend of special mandi spices</p>
+                    <div class="home-dish-footer">
+                        <span class="home-dish-price" data-cms="dish-1-price">₹800</span>
+                        <button class="btn-global home-dish-btn" data-cms="dish-1-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dish Card 2 -->
+            <div class="home-dish-card" data-cms="dish-2">
+                <div class="home-dish-image">
+                    <img src="images/veg-pasta.jpg" alt="Veg Pasta" data-cms="dish-2-image">
+                    <span class="home-dish-badge home-dish-badge-veg" data-cms="dish-2-badge">Veg</span>
+                </div>
+                <div class="home-dish-content">
+                    <h4 class="home-dish-name" data-cms="dish-2-name">Veg Pasta</h4>
+                    <p class="home-dish-desc" data-cms="dish-2-desc">Penne tossed in creamy white or tangy red sauce with sautéed bell peppers and herbs</p>
+                    <div class="home-dish-footer">
+                        <span class="home-dish-price" data-cms="dish-2-price">₹189</span>
+                        <button class="btn-global home-dish-btn" data-cms="dish-2-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dish Card 3 -->
+            <div class="home-dish-card" data-cms="dish-3">
+                <div class="home-dish-image">
+                    <img src="images/shake-oreo.jpg" alt="Oreo Shake" data-cms="dish-3-image">
+                    <span class="home-dish-badge" data-cms="dish-3-badge">Cold Beverages</span>
+                </div>
+                <div class="home-dish-content">
+                    <h4 class="home-dish-name" data-cms="dish-3-name">Oreo Shake</h4>
+                    <p class="home-dish-desc" data-cms="dish-3-desc">Classic milkshake mixed with crushed Oreos and whipped cream topping</p>
+                    <div class="home-dish-footer">
+                        <span class="home-dish-price" data-cms="dish-3-price">₹130</span>
+                        <button class="btn-global home-dish-btn" data-cms="dish-3-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dish Card 4 -->
+            <div class="home-dish-card" data-cms="dish-4">
+                <div class="home-dish-image">
+                    <img src="images/bread-dessert.jpg" alt="Banana Bliss Bread Dessert" data-cms="dish-4-image">
+                    <span class="home-dish-badge home-dish-badge-sweet" data-cms="dish-4-badge">Sweets</span>
+                </div>
+                <div class="home-dish-content">
+                    <h4 class="home-dish-name" data-cms="dish-4-name">Banana Bliss Bread Dessert</h4>
+                    <p class="home-dish-desc" data-cms="dish-4-desc">Warm bread dessert layered with banana slices, blueberries, and a drizzle of honey</p>
+                    <div class="home-dish-footer">
+                        <span class="home-dish-price" data-cms="dish-4-price">₹169</span>
+                        <button class="btn-global home-dish-btn" data-cms="dish-4-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-featured-cta">
+            <button class="btn-global btn-outline home-view-menu-btn" id="home-view-menu-btn" data-cms="view-menu-btn">View Full Menu</button>
+        </div>
+    </section>
+
+    <!-- ==================== DARK FADE DIVIDER ==================== -->
+    <div class="home-divider-fade"></div>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section class="home-testimonials" id="home-testimonials">
+        <div class="home-testimonials-header">
+            <p class="home-section-label" data-cms="testimonials-label">WHAT OUR GUESTS SAY</p>
+            <h3 class="home-section-title" data-cms="testimonials-title">Testimonials</h3>
+        </div>
+
+        <div class="home-testimonials-grid" id="home-testimonials-grid">
+            <!-- Testimonial Card 1 -->
+            <div class="home-testimonial-card" data-cms="testimonial-1">
+                <div class="home-testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="home-testimonial-text" data-cms="testimonial-1-text">
+                    Absolutely stunning! The ambiance, food quality, and service are top-notch. Every dish is a masterpiece.
+                </p>
+                <div class="home-testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="home-testimonial-author" data-cms="testimonial-1-author">Priya Menon</p>
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div class="home-testimonial-card home-testimonial-card-highlight" data-cms="testimonial-2">
+                <div class="home-testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="home-testimonial-text" data-cms="testimonial-2-text">
+                    Best dining experience in Kochi! The chef truly understands flavors. Highly recommended!
+                </p>
+                <div class="home-testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="home-testimonial-author" data-cms="testimonial-2-author">Rahul Sharma</p>
+            </div>
+
+            <!-- Testimonial Card 3 -->
+            <div class="home-testimonial-card" data-cms="testimonial-3">
+                <div class="home-testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="home-testimonial-text" data-cms="testimonial-3-text">
+                    WOW Bites lives up to its name! The presentation and taste are exceptional. Will visit again!
+                </p>
+                <div class="home-testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="home-testimonial-author" data-cms="testimonial-3-author">Anjali Nair</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== NEWSLETTER SECTION ==================== -->
+    <section class="home-newsletter" id="home-newsletter">
+        <div class="home-newsletter-content">
+            <h3 class="home-newsletter-title" data-cms="newsletter-title">Stay Updated</h3>
+            <p class="home-newsletter-desc" data-cms="newsletter-desc">
+                Subscribe to our newsletter for exclusive offers, new menu items, and culinary insights
+            </p>
+            <form class="home-newsletter-form" id="home-newsletter-form">
+                <input 
+                    type="email" 
+                    class="home-newsletter-input" 
+                    placeholder="Enter your email" 
+                    required 
+                    data-cms="newsletter-input"
+                    id="home-newsletter-email"
+                >
+                <button type="submit" class="btn-global home-newsletter-btn" data-cms="newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="home-footer" id="home-footer">
+        <div class="home-footer-content">
+            <!-- Brand Column -->
+            <div class="home-footer-col home-footer-brand">
+                <h4 class="home-footer-logo" data-cms="footer-logo">WOW Bites</h4>
+                <p class="home-footer-tagline" data-cms="footer-tagline">Where Every Bite Says WOW!</p>
+                <p class="home-footer-desc" data-cms="footer-desc">
+                    Premium dining experience in the heart of Kochi.
+                </p>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="home-footer-col">
+                <h5 class="home-footer-heading" data-cms="footer-links-heading">Quick Links</h5>
+                <ul class="home-footer-links">
+                    <li><a href="index.html" data-cms="footer-link-home">Home</a></li>
+                    <li><a href="aboutus.html" data-cms="footer-link-about">About</a></li>
+                    <li><a href="menu.html" data-cms="footer-link-menu">Menu</a></li>
+                    <li><a href="blog.html" data-cms="footer-link-blog">Blog</a></li>
+                    <li><a href="contact.html" data-cms="footer-link-contact">Contact</a></li>
+                    <li><a href="contact.html#booking-form" data-cms="footer-link-reservations">Reservations</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="home-footer-col">
+                <h5 class="home-footer-heading" data-cms="footer-contact-heading">Contact Us</h5>
+                <ul class="home-footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-cms="footer-address">MG Road, Kochi, Kerala 682001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span data-cms="footer-phone">+91 484 123 4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span data-cms="footer-email">hello@wowbites.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social & Hours Column -->
+            <div class="home-footer-col">
+                <h5 class="home-footer-heading" data-cms="footer-social-heading">Follow Us</h5>
+                <div class="home-footer-social">
+                    <a href="#" class="home-social-icon" data-cms="footer-instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="home-social-icon" data-cms="footer-facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="home-social-icon" data-cms="footer-youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="home-footer-hours">
+                    <h5 class="home-footer-heading" data-cms="footer-hours-heading">Opening Hours</h5>
+                    <p data-cms="footer-hours">Mon - Sun: 11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="home-footer-bottom">
+            <p data-cms="footer-copyright">
+                © 2025 WOW Bites. All rights reserved. Crafted with love in Kochi.
+            </p>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

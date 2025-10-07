@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WOW Bites | Get in Touch</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ==================== HEADER SECTION ==================== -->
+    <header class="contact-header" id="contact-header">
+        <nav class="contact-nav" id="contact-nav">
+            <div class="contact-nav-brand">
+                <h1 class="contact-brand-title">WOW Bites</h1>
+                <p class="contact-brand-tagline">Where Every Bite Says WOW!</p>
+            </div>
+            
+            <div class="contact-nav-menu" id="contact-nav-menu">
+                <a href="index.html" class="contact-nav-link" data-cms="contact-nav-home">Home</a>
+                <a href="aboutus.html" class="contact-nav-link" data-cms="contact-nav-about">About Us</a>
+                <a href="menu.html" class="contact-nav-link" data-cms="contact-nav-menu">Menu</a>
+                <a href="blog.html" class="contact-nav-link" data-cms="contact-nav-blog">Blog</a>
+                <a href="contact.html" class="contact-nav-link active" data-cms="contact-nav-contact">Contact</a>
+            </div>
+
+            <button class="btn-global contact-nav-cta" id="contact-nav-book-btn" data-cms="contact-nav-book-btn">Book a Table</button>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="contact-nav-toggle" id="contact-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="contact-hero" id="contact-hero">
+        <div class="contact-hero-content">
+            <p class="contact-hero-label" data-cms="contact-hero-label">GET IN TOUCH</p>
+            <h2 class="contact-hero-title" data-cms="contact-hero-title">Contact Us</h2>
+            <p class="contact-hero-desc" data-cms="contact-hero-desc">
+                Have a question or want to make a reservation? We'd love to hear from you!
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== BOOKING & CONTACT INFO SECTION ==================== -->
+    <section class="contact-main" id="contact-main">
+        <div class="contact-main-container">
+            
+            <!-- Left: Booking Form -->
+            <div class="contact-booking-form" id="contact-booking-form">
+                <h3 class="contact-form-title" data-cms="contact-form-title">Book a Table</h3>
+                
+                <form id="contact-reservation-form" novalidate>
+                    <!-- Name Field -->
+                    <div class="contact-form-group">
+                        <label for="contact-name" class="contact-form-label" data-cms="contact-label-name">Name *</label>
+                        <input 
+                            type="text" 
+                            id="contact-name" 
+                            class="contact-form-input" 
+                            placeholder="Your full name" 
+                            required
+                            data-cms="contact-input-name"
+                        >
+                        <span class="contact-form-error" id="contact-name-error">Please enter your name</span>
+                    </div>
+
+                    <!-- Email and Phone in Row -->
+                    <div class="contact-form-row">
+                        <div class="contact-form-group">
+                            <label for="contact-email" class="contact-form-label" data-cms="contact-label-email">Email *</label>
+                            <input 
+                                type="email" 
+                                id="contact-email" 
+                                class="contact-form-input" 
+                                placeholder="your@email.com" 
+                                required
+                                data-cms="contact-input-email"
+                            >
+                            <span class="contact-form-error" id="contact-email-error">Please enter a valid email</span>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-phone" class="contact-form-label" data-cms="contact-label-phone">Phone *</label>
+                            <input 
+                                type="tel" 
+                                id="contact-phone" 
+                                class="contact-form-input" 
+                                placeholder="+91 98765 43210" 
+                                required
+                                data-cms="contact-input-phone"
+                            >
+                            <span class="contact-form-error" id="contact-phone-error">Please enter a valid phone number</span>
+                        </div>
+                    </div>
+
+                    <!-- Date, Time, and Guests in Row -->
+                    <div class="contact-form-row">
+                        <div class="contact-form-group">
+                            <label for="contact-date" class="contact-form-label" data-cms="contact-label-date">Date *</label>
+                            <input 
+                                type="date" 
+                                id="contact-date" 
+                                class="contact-form-input" 
+                                required
+                                data-cms="contact-input-date"
+                            >
+                            <span class="contact-form-error" id="contact-date-error">Please select a date</span>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-time" class="contact-form-label" data-cms="contact-label-time">Time *</label>
+                            <input 
+                                type="time" 
+                                id="contact-time" 
+                                class="contact-form-input" 
+                                required
+                                data-cms="contact-input-time"
+                            >
+                            <span class="contact-form-error" id="contact-time-error">Please select a time</span>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-guests" class="contact-form-label" data-cms="contact-label-guests">Guests *</label>
+                            <input 
+                                type="number" 
+                                id="contact-guests" 
+                                class="contact-form-input" 
+                                placeholder="2" 
+                                min="1" 
+                                max="20" 
+                                required
+                                data-cms="contact-input-guests"
+                            >
+                            <span class="contact-form-error" id="contact-guests-error">Please enter number of guests</span>
+                        </div>
+                    </div>
+
+                    <!-- Dishes/Food Items Field -->
+                    <div class="contact-form-group">
+                        <label for="contact-dishes" class="contact-form-label" data-cms="contact-label-dishes">Dishes/Food Items</label>
+                        <input 
+                            type="text" 
+                            id="contact-dishes" 
+                            class="contact-form-input" 
+                            placeholder="E.g., Gourmet Steak, Truffle Pasta" 
+                            data-cms="contact-input-dishes"
+                        >
+                    </div>
+
+                    <!-- Special Requests -->
+                    <div class="contact-form-group">
+                        <label for="contact-requests" class="contact-form-label" data-cms="contact-label-requests">Special Requests</label>
+                        <textarea 
+                            id="contact-requests" 
+                            class="contact-form-textarea" 
+                            rows="4" 
+                            placeholder="Any special requirements or dietary restrictions?"
+                            data-cms="contact-input-requests"
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-global contact-form-submit" data-cms="contact-form-submit">
+                        Submit Reservation
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right: Contact Information -->
+            <div class="contact-info-section">
+                
+                <!-- Location Card -->
+                <div class="contact-info-card" data-cms="contact-info-location">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4 class="contact-info-title" data-cms="contact-info-location-title">Location</h4>
+                    <p class="contact-info-text" data-cms="contact-info-location-text">
+                        MG Road, Kochi<br>
+                        Kerala 682001, India
+                    </p>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-info-card" data-cms="contact-info-phone">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4 class="contact-info-title" data-cms="contact-info-phone-title">Phone</h4>
+                    <p class="contact-info-text" data-cms="contact-info-phone-text">
+                        +91 484 123 4567<br>
+                        +91 98765 43210
+                    </p>
+                </div>
+
+                <!-- Email Card -->
+                <div class="contact-info-card" data-cms="contact-info-email">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4 class="contact-info-title" data-cms="contact-info-email-title">Email</h4>
+                    <p class="contact-info-text" data-cms="contact-info-email-text">
+                        hello@wowbites.com<br>
+                        reservations@wowbites.com
+                    </p>
+                </div>
+
+                <!-- Opening Hours Card -->
+                <div class="contact-info-card" data-cms="contact-info-hours">
+                    <div class="contact-info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="contact-info-title" data-cms="contact-info-hours-title">Opening Hours</h4>
+                    <p class="contact-info-text" data-cms="contact-info-hours-text">
+                        Monday - Sunday<br>
+                        11:00 AM - 11:00 PM
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MAP SECTION ==================== -->
+    <section class="contact-map" id="contact-map">
+        <div class="contact-map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.0449!2d76.2673!3d9.9312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwNTUnNTIuMyJOIDc2wrAxNicwMi40IkU!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%" 
+                height="500" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="WOW Bites Location"
+                data-cms="contact-map-embed"
+            ></iframe>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER SECTION ==================== -->
+    <footer class="contact-footer" id="contact-footer">
+        <div class="contact-footer-content">
+            <!-- Brand Column -->
+            <div class="contact-footer-col contact-footer-brand">
+                <h4 class="contact-footer-logo" data-cms="contact-footer-logo">WOW Bites</h4>
+                <p class="contact-footer-tagline" data-cms="contact-footer-tagline">Where Every Bite Says WOW!</p>
+                <p class="contact-footer-desc" data-cms="contact-footer-desc">
+                    Premium dining experience in the heart of Kochi.
+                </p>
+            </div>
+
+            <!-- Quick Links Column -->
+            <div class="contact-footer-col">
+                <h5 class="contact-footer-heading" data-cms="contact-footer-links-heading">Quick Links</h5>
+                <ul class="contact-footer-links">
+                    <li><a href="index.html" data-cms="contact-footer-link-home">Home</a></li>
+                    <li><a href="aboutus.html" data-cms="contact-footer-link-about">About</a></li>
+                    <li><a href="menu.html" data-cms="contact-footer-link-menu">Menu</a></li>
+                    <li><a href="blog.html" data-cms="contact-footer-link-blog">Blog</a></li>
+                    <li><a href="contact.html" data-cms="contact-footer-link-contact">Contact</a></li>
+                    <li><a href="contact.html#booking-form" data-cms="contact-footer-link-reservations">Reservations</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="contact-footer-col">
+                <h5 class="contact-footer-heading" data-cms="contact-footer-contact-heading">Contact Us</h5>
+                <ul class="contact-footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-cms="contact-footer-address">MG Road, Kochi, Kerala 682001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span data-cms="contact-footer-phone">+91 484 123 4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span data-cms="contact-footer-email">hello@wowbites.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Social & Hours Column -->
+            <div class="contact-footer-col">
+                <h5 class="contact-footer-heading" data-cms="contact-footer-social-heading">Follow Us</h5>
+                <div class="contact-footer-social">
+                    <a href="#" class="contact-social-icon" data-cms="contact-footer-instagram" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="contact-social-icon" data-cms="contact-footer-facebook" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="contact-social-icon" data-cms="contact-footer-youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="contact-footer-hours">
+                    <h5 class="contact-footer-heading" data-cms="contact-footer-hours-heading">Opening Hours</h5>
+                    <p data-cms="contact-footer-hours">Mon - Sun: 11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="contact-footer-bottom">
+            <p data-cms="contact-footer-copyright">
+                © 2025 WOW Bites. All rights reserved. Crafted with love in Kochi.
+            </p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
